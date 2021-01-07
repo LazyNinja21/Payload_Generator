@@ -2,4 +2,6 @@ from faker import Faker
 from faker.providers import internet
 import random
 
-fake = Faker('en_US')
+fake_us = Faker('en_US')
+
+fake = Faker()
