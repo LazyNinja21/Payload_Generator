@@ -1,4 +1,11 @@
 {
-    "name": "",
-    "age": 0
+    "Name": "",
+    "Age": 0,
+    "Address" : {
+        "Address_L1" : "",
+        "City" : "",
+        "State" : "",
+        "Country" : "",
+        "Postal" : ""
+    }
 }

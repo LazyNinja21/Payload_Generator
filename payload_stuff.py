@@ -27,8 +27,13 @@ i = 0
 
 #Loop to generate the number of payloads defined by user
 while (i<num):
-    person_dict['name'] = fake.name()
-    person_dict['age'] = random.randint(10, 80)
+    person_dict['Name'] = fake.name()
+    person_dict['Age'] = random.randint(10, 80)
+    person_dict['Address']['Address_L1'] = fake.street_address()
+    person_dict['Address']['City'] = fake.city()
+    person_dict['Address']['State'] = fake.state()
+    person_dict['Address']['Country'] = 'US' #fake.country(), country_code
+    person_dict['Address']['Postal'] = fake.postalcode_in_state()
     payload_write(person_dict)
     #print(i,person_dict)
     i=i+1
